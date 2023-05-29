@@ -39,6 +39,14 @@
                 <a href="/job-board/public/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i>
                     Manage Listings</a>
             </li>
+            <li>
+                <form class="inline" method="POST" action="/job-board/public/logout">
+                    @csrf
+                    <button type="submit">
+                        <i class="fa-solid fa-door-closed"></i>Logout
+                    </button>
+                </form>
+            </li>
             @else
             <li>
                 <a href="/job-board/public/register" class="hover:text-laravel"><i class="fa-solid fa-user-plus"></i> Register</a>
