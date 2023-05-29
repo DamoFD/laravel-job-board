@@ -14,12 +14,6 @@ use App\Http\Controllers\ListingController;
 |
 */
 
-// All Listings
-Route::get('/', [ListingController::class, 'index']);
-
-// Single Listing
-Route::get('/listings/{listing}', [ListingController::class, 'show']);
-
 // Common Resource Routes:
 // index - Show all listings
 // show - Show single listing
@@ -28,3 +22,9 @@ Route::get('/listings/{listing}', [ListingController::class, 'show']);
 // edit - Show form to edit listing
 // update - Update listing
 // destroy - Delete listing
+
+// All Listings
+Route::get('/', [ListingController::class, 'index']);
+
+// Single Listing
+Route::get('/listings/{listing}', [ListingController::class, 'show']);
